@@ -8,222 +8,241 @@ $color-text: #000000;
 $color-element: #ffcc00;
 $color-light: #ffffff;
 
+
 /* Global */
 
 body {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-    font-family: $font-text;
-    color: $color-text;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: $font-text;
+  color: $color-text;
 }
 
 section {
-    padding: 90px 130px;
-    text-align: center;
+  padding: 90px 130px;
+  text-align: center;
 }
 
 .section-title {
-    font-family: $font-header;
-    font-size: 40px;
-    margin-top: 24px;
-    margin-bottom: -3px;
+  font-family: $font-header;
+  font-size: 40px;
+  margin-top: 24px;
+  margin-bottom: -3px;
 }
 
 .section-subtitle {
-    font-style: italic;
-    font-size: 16px;
-    margin-top: -3px;
-    margin-bottom: 75px;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: -3px;
+  margin-bottom: 75px;
 }
 
 .box {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0 0 0 0;
-    margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0 0 0 0;
+  margin-bottom: 20px;
 
-    img {
-        margin-bottom: 5px;
-    }
-    
-    img.thumbnail {
-        width: 100%;
-        object-fit: cover;
-        margin-bottom: 1px;
-    }
-    
-    p {
-        margin-top: 0;
-        font-size: 14px;
-    }
+  img.thumbnail {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  p {
+    margin-top: 0;
+    font-size: 14px;
+  }
 }
 
 .box-title {
-    font-family: $font-header;
-    margin-top: 10px;
-    margin-bottom: 0px;
+  font-family: $font-header;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .box-subtitle {
-    font-style: italic;
-    margin-top: 0;
+  font-style: italic;
+  margin-top: 0;
 }
 
 
 /* HEADER */
 
 .header {
-    min-height: 400px;
-    display: flex;
-    margin: 0;
-    padding: 0 130px 0;
-    background-image: url("../images/bg_img.jpg");
-	background-position: center center;
-    background-size: cover;
-
+  min-height: 400px;
+  display: flex;
+  margin: 0;
+  padding: 0 130px 0;
+  background-image: url("../images/bg_img.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
 .navigation .brand-logo {
-    display: inline-block;
-    font-family: $font-logo;
-    font-size: 26px;
-    color: $color-element;
-    padding: 5px 5px;
-    text-align: center;
+  display: inline-block;
+  font-family: $font-logo;
+  font-size: 26px;
+  color: $color-element;
+  padding: 5px 5px;
+  text-align: center;
 }
 
 .navigation .cstm-nav {
-    text-align: right;
+  text-align: right;
 }
 
 .navigation {
-    width: 100%;
-    padding-top: 25px;
+  width: 100%;
+  padding-top: 25px;
 
-    a {
+  a {
     text-decoration: none;
     font-family: $font-header;
     color: $color-light;
+  }
+
+  ul {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 50px;
+
+    li {
+      display: inline-block;
+      margin-right: 34px;
     }
-
-        ul {
-            list-style-type: none;
-            display: inline-block;
-            padding-right: 50px;
-
-            li {
-                display: inline-block;
-                margin-right: 34px;
-            }
-        }
+  }
 }
 
 .splash-inner {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 60px;
-    margin-bottom: 40px;
-    padding: 120px 0;
-    min-height: 500px;
-    text-align: center;
-    color: $color-light;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  padding: 120px 0;
+  min-height: 500px;
+  text-align: center;
+  color: $color-light;
+  justify-content: space-between;
+  align-content: center;
 
-        h1 {
-            font-family: $font-header;
-            font-size: 74px;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+  h1 {
+    font-family: $font-header;
+    font-size: 74px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-        h3 {
-            font-family: $font-text;
-            font-size: 38px;
-            font-weight: 400;
-            font-style: italic;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+  h3 {
+    font-family: $font-text;
+    font-size: 38px;
+    font-weight: 400;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
-
 .btn {
-	display: inline-block;
-    min-width: 240px;
-    margin: 0 auto 0 auto;
-    padding: 20px;
-    border-radius: 3px;
-    font-family: $font-header;
-    font-size: 18px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: none;
-	background-color: $color-element;
-	color: $color-light;
+  display: inline-block;
+  min-width: 240px;
+  margin: 0 auto 0 auto;
+  padding: 20px;
+  border-radius: 3px;
+  font-family: $font-header;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background-color: $color-element;
+  color: $color-light;
 }
 
 
 /* SERVICES */
 
 .services .box p {
-    margin-top: 5px;
+  margin-top: 5px;
 }
+
 
 /* PORTFOLIO */
 
 .portfolio {
-    background-color: #e6e6e6;
+  background-color: #e6e6e6;
 
-    .box {
-        margin-left: 0px;
-        margin-right: 0;
-        padding: 0;
-        margin-bottom: 60px;
-        background-color: $color-light;
-    }
+  .box {
+    margin-left: 0px;
+    margin-right: 0;
+    padding: 0;
+    margin-bottom: 60px;
+    background-color: $color-light;
+  }
 
-    .row {
-        padding-right: 10px;
-        padding-left: 10px;
-        } 
+  .row {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 
 /* FOOTER */
 
-
 footer {
-    text-align: center;
-    padding: 15px 130px;
+  text-align: center;
+  padding: 15px 130px;
 
-    ul {
-        margin: 10px;
-        padding: 0 15px;
-            li {
-                display: inline-block;
-                font-size: 0;
-                i {
-                font-size: 20px;
-                background-color: $color-text;
-                width: 43px;
-                height: 43px;
-                line-height: 43px;
-                margin: 0 1px;
-                color: $color-light;
-                border-radius: 50%;
-                border: none;
-                padding: 10px;
-                }
-            }
-        }
+  ul {
+    margin: 10px;
+    padding: 0 15px;
+
+    li {
+      display: inline-block;
+      font-size: 0;
+
+      i {
+        font-size: 20px;
+        background-color: $color-text;
+        width: 43px;
+        height: 43px;
+        line-height: 43px;
+        margin: 0 1px;
+        color: $color-light;
+        border-radius: 50%;
+        border: none;
+        padding: 10px;
+      }
     }
+  }
+}
 
 
+/* MEDIA */
 
+@media (min-width: 600px) {
 
-   
+  footer {
+    padding: 15px 80px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 90px 80px;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+    padding: 90px 130px;
+  }
+
+  footer {
+    padding: 15px 130px;
+  }
+}
